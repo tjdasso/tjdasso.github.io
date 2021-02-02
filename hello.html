@@ -2,10 +2,9 @@
 <script src="http://authentication.asignio.com/_content/Asignio.Web.Library/asignio-core.js"></script>
 <script src="http://authentication.asignio.com/_content/Asignio.Web.Library/asignio-ajax.js"></script>
 <script src="http://authentication.asignio.com/js/api/asignio-authentication-dialog.js"></script>
+<asignio-authentication applicationToken=“EDF5FF3AC064EB11AE3000FFA7C9D75B“></asignio-authentication>
 <script>
   function hello() {
-
-    alert("hello")
     function callback() {
         // do nothing
     }
@@ -18,7 +17,7 @@
     Asignio.authentication.authenticateUser(request, callback);
   }
 </script>
-<asignio-authentication applicationToken=“EDF5FF3AC064EB11AE3000FFA7C9D75B“></asignio-authentication>
 
 
-<button type="button" onlick="hello()">Click Me!</button>
+
+<button type="button" onlick="alert(\"hello\")">Click Me!</button>
