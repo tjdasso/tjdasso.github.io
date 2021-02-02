@@ -1,0 +1,22 @@
+<script src=“https://authentication.asignio.com/js/api/webcomponents-loader.js”></script>
+<script src=“https://authentication.asignio.com/_content/Asignio.Web.Library/asignio-core.js”></script>
+<script src=“https://authentication.asignio.com/_content/Asignio.Web.Library/asignio-ajax.js”></script>
+<script src=“https://authentication.asignio.com/js/api/asignio-authentication-dialog.js”></script>
+<script>
+  function hello() {
+    function callback() {
+        // do nothing
+    }
+
+    var request = {
+        ApplicationToken: "EDF5FF3AC064EB11AE3000FFA7C9D75B",
+        UserName: "tjdasso@gmail.com"
+    }
+
+    Asignio.authentication.authenticateUser(request, callback);
+  }
+</script>
+<asignio-authentication applicationToken=“EDF5FF3AC064EB11AE3000FFA7C9D75B“></asignio-authentication>
+
+
+<button type="button" onlick="hello()">Click Me!</button>
